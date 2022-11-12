@@ -13,7 +13,7 @@ namespace SpeedOfTheWinds
     {
         public const string GUID = "tsadriu.speedofthewinds";
         public const string NAME = "SpeedOfTheWinds";
-        public const string VERSION = "0.1.2";
+        public const string VERSION = "0.1.3";
 
         internal static ManualLogSource Log;
 
@@ -50,8 +50,13 @@ namespace SpeedOfTheWinds
                     },
                     new SL_Recipe.Ingredient {
                         Type = RecipeIngredient.ActionTypes.AddSpecificIngredient,
-                        SelectorValue = "6400130" // Mana stone
-					}
+                        SelectorValue = "4000010" // Gaberries ID
+					},
+                    new SL_Recipe.Ingredient
+                    {
+                        Type = RecipeIngredient.ActionTypes.AddSpecificIngredient,
+                        SelectorValue = "6000070" // Salt ID
+                    }
                 },
                 Results = {
                     new SL_Recipe.ItemQty {
@@ -76,8 +81,8 @@ namespace SpeedOfTheWinds
                 UID = Constants.SPEED_OF_WINDS_I_DROPTABLE_UID,
                 RandomTables = {new SL_RandomDropGenerator {
                     MinNumberOfDrops = 1,
-                    MaxNumberOfDrops = 5,
-                    NoDrop_DiceValue = 3,
+                    MaxNumberOfDrops = 3,
+                    NoDrop_DiceValue = 1,
                     Drops = {
                         new SL_ItemDropChance {
                             DiceValue = 9,
@@ -88,7 +93,7 @@ namespace SpeedOfTheWinds
                         new SL_ItemDropChance {
                             DiceValue = 5,
                             MinQty = 1,
-                            MaxQty = 5,
+                            MaxQty = 1,
                             DroppedItemID = speedOfTheWindsIRecipeItem.New_ItemID
                         }
                     }
@@ -117,6 +122,11 @@ namespace SpeedOfTheWinds
                         Type = RecipeIngredient.ActionTypes.AddSpecificIngredient,
                         SelectorValue = "4000010" // Gaberries ID
 					},
+                    new SL_Recipe.Ingredient
+                    {
+                        Type = RecipeIngredient.ActionTypes.AddSpecificIngredient,
+                        SelectorValue = "6000070" // Salt ID
+                    },
                     new SL_Recipe.Ingredient {
                         Type = RecipeIngredient.ActionTypes.AddSpecificIngredient,
                         SelectorValue = "6400130" // Mana stone
@@ -145,8 +155,8 @@ namespace SpeedOfTheWinds
                 UID = Constants.SPEED_OF_WINDS_II_DROPTABLE_UID,
                 RandomTables = {new SL_RandomDropGenerator {
                     MinNumberOfDrops = 1,
-                    MaxNumberOfDrops = 5,
-                    NoDrop_DiceValue = 3,
+                    MaxNumberOfDrops = 3,
+                    NoDrop_DiceValue = 1,
                     Drops = {
                         new SL_ItemDropChance {
                             DiceValue = 9,
@@ -155,9 +165,9 @@ namespace SpeedOfTheWinds
                             DroppedItemID = speedOfTheWindsIIPotion.New_ItemID
                         },
                         new SL_ItemDropChance {
-                            DiceValue = 5,
+                            DiceValue = 2,
                             MinQty = 1,
-                            MaxQty = 5,
+                            MaxQty = 1,
                             DroppedItemID = speedOfTheWindsIIRecipeItem.New_ItemID
                         }
                     }

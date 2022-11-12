@@ -12,8 +12,8 @@ namespace SpeedOfTheWinds.Items
             Description = $"Drinking this potion will gradually increase your movement speed up to x{Constants.SPEED_OF_WINDS_II_SPEED_MULTIPLIER_MAX} faster than your normal movement speed for 20 minutes. Engaging in combat will disable this effect and pause the effect's countdown. Does not increase stamina consumption while running.";
             StatsHolder = new SL_ItemStats
             {
-                BaseValue = 25,
-                RawWeight = 0.4f
+                BaseValue = 30,
+                RawWeight = 0.5f
             };
             EffectBehaviour = EditBehaviours.Destroy;
             EffectTransforms = new SL_EffectTransform[] {
