@@ -9,6 +9,13 @@ The timer of both potions will pause if you engage in combat.
 
 ## Changelog
 
+## 0.1.3
+- [UPDATE] Made the recipe of Speed of the Winds I Potion more forgiving and easy to craft.
+
+- [UPDATE] Only the Speed of the Winds II potion requires a mana stone.
+
+- [UPDATE] Now both potions require salt to craft.
+
 ## 0.1.2
 - [BUGFIX] After using the Speed of the winds potion, even if the effect vanishes, you'll still burn more stamina than usual. This has now been fixed.
 
