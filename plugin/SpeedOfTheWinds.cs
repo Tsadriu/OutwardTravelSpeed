@@ -13,7 +13,7 @@ namespace SpeedOfTheWinds
     {
         public const string GUID = "tsadriu.speedofthewinds";
         public const string NAME = "SpeedOfTheWinds";
-        public const string VERSION = "0.1.1";
+        public const string VERSION = "0.1.2";
 
         internal static ManualLogSource Log;
 
@@ -133,7 +133,7 @@ namespace SpeedOfTheWinds
 
             SL_RecipeItem speedOfTheWindsIIRecipeItem = new SL_RecipeItem
             {
-                RecipeUID = Constants.SPEED_OF_WINDS_I_POTION_RECIPE_NAME,
+                RecipeUID = Constants.SPEED_OF_WINDS_II_POTION_RECIPE_NAME,
                 Target_ItemID = 5700110, // Life Potion
                 New_ItemID = -12501,
                 Name = "Alchemy: Speed of The Winds II"
@@ -142,7 +142,7 @@ namespace SpeedOfTheWinds
 
             SL_DropTable SpeedOfTheWindsIIPotionAndRecipeDropTable = new SL_DropTable
             {
-                UID = Constants.SPEED_OF_WINDS_I_DROPTABLE_UID,
+                UID = Constants.SPEED_OF_WINDS_II_DROPTABLE_UID,
                 RandomTables = {new SL_RandomDropGenerator {
                     MinNumberOfDrops = 1,
                     MaxNumberOfDrops = 5,

@@ -26,16 +26,6 @@ namespace SpeedOfTheWinds.Effects
             return Constants.SPEED_OF_WINDS_II_SPEED_MULTIPLIER_MIN + timeRatio * (Constants.SPEED_OF_WINDS_II_SPEED_MULTIPLIER_MAX - Constants.SPEED_OF_WINDS_II_SPEED_MULTIPLIER_MIN);
         }
 
-        private void SetStaminaBurnMultiplier(Character character, float value)
-        {
-            character.Stats.GetStat(CharacterStats.StatType.StaminaBurn).AddMultiplierStack(Constants.SPEED_OF_WINDS_II_IDENTIFIER, value);
-        }
-
-        private void RemoveStaminaBurnMultiplier(Character character)
-        {
-            character.Stats.GetStat(CharacterStats.StatType.StaminaBurn).RemoveMultiplierStack(Constants.SPEED_OF_WINDS_II_IDENTIFIER);
-        }
-
         public override void ActivateLocally(Character _affectedCharacter, object[] _infos)
         {
             if (_affectedCharacter.EngagedCharacters.Any(it => it))
@@ -45,9 +35,7 @@ namespace SpeedOfTheWinds.Effects
             }
             else
             {
-                float speedMultiplier = GetActualSpeedMultiplier();
-                _affectedCharacter.Speed = DefaultSpeed * speedMultiplier;
-                SetStaminaBurnMultiplier(_affectedCharacter, speedMultiplier);
+                _affectedCharacter.Speed = DefaultSpeed * GetActualSpeedMultiplier();
                 m_parentStatusEffect.SetTimerSuspended(false);
             }
         }

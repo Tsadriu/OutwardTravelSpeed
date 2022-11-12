@@ -18,6 +18,7 @@ namespace SpeedOfTheWinds.Effects
         {
             lastCombatTime = Time.time;
             character.Speed = DefaultSpeed;
+            RemoveStaminaBurnMultiplier(character);
         }
 
         private float GetActualSpeedMultiplier()
