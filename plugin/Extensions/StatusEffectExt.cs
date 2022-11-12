@@ -1,10 +1,13 @@
-namespace TravelSpeed.Extensions {
-	public class StatusEffectExt {
-		private bool timerSuspended = false;
+namespace SpeedOfTheWinds.Extensions
+{
+    public class StatusEffectExt
+    {
+        private bool isTimerSuspended = false;
 
-		public bool TimerSuspended {
-			get => timerSuspended;
-			set => timerSuspended = value;
-		}
-	}
+        public bool TimerSuspended
+        {
+            get => isTimerSuspended;
+            set => isTimerSuspended = value;
+        }
+    }
 }

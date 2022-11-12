@@ -1,17 +1,17 @@
 using SideLoader;
 
-namespace TravelSpeed.Effects {
-	public class TravelSpeedStatusEffect : SL_StatusEffect {
-		public TravelSpeedStatusEffect() {
+namespace SpeedOfTheWinds.Effects {
+	public class SpeedOfTheWindsIStatusEffect : SL_StatusEffect {
+		public SpeedOfTheWindsIStatusEffect() {
 			TargetStatusIdentifier = "Speed Up";
 			NewStatusID = -12000;
-			StatusIdentifier = Constants.CUSTOM_STATUS_IDENTIFIER;
-			Name = "Travel Speed";
-			Description = "Move faster when not in combat";
+			StatusIdentifier = Constants.SPEED_OF_WINDS_I_IDENTIFIER;
+			Name = "Speed of the Winds I";
+			Description = "Increases your movement speed while you're not in combat. Burns more stamina the faster you are.";
 			Purgeable = true;
 			DisplayedInHUD = true;
 			IsMalusEffect = false;
-			Lifespan = 300;
+			Lifespan = 600;
 			RefreshRate = 1f;
 			AmplifiedStatusIdentifier = string.Empty;
 			FamilyMode = StatusEffect.FamilyModes.Bind;
@@ -20,7 +20,7 @@ namespace TravelSpeed.Effects {
 				new SL_EffectTransform {
 					TransformName = "Effects",
 					Effects = new SL_Effect[] {
-						new TravelSpeedEffectTemplate()
+						new SpeedOfTheWindsIEffectTemplate()
 					}
 				}
 			};

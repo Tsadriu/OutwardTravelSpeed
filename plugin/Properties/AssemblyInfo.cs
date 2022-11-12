@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TravelSpeed")]
-[assembly: AssemblyDescription("Adds an effect that increases out of combat movement speed.")]
+[assembly: AssemblyTitle("SpeedOfTheWinds")]
+[assembly: AssemblyDescription("Adds potions and effects that increases movement speed, while out of combat.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TravelSpeed")]
-[assembly: AssemblyCopyright("Copyright © Faeryn 2022")]
+[assembly: AssemblyProduct("SpeedOfTheWinds")]
+[assembly: AssemblyCopyright("Copyright © Tsadriu 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion(TravelSpeed.TravelSpeed.VERSION)]
-[assembly: AssemblyFileVersion(TravelSpeed.TravelSpeed.VERSION)]
+[assembly: AssemblyVersion(SpeedOfTheWinds.SpeedOfTheWinds.VERSION)]
+[assembly: AssemblyFileVersion(SpeedOfTheWinds.SpeedOfTheWinds.VERSION)]
